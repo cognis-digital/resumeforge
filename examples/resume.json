@@ -1,0 +1,65 @@
+{
+  "basics": {
+    "name": "Jordan Avery Reyes",
+    "label": "Backend Engineer",
+    "email": "jordan.reyes@example.com",
+    "phone": "+1 555 0142",
+    "location": "Austin, TX",
+    "summary": "Backend engineer with seven years building reliable data and payments services. I care about clear interfaces, observable systems, and keeping on-call quiet."
+  },
+  "work": [
+    {
+      "company": "Northwind Payments",
+      "position": "Senior Backend Engineer",
+      "startDate": "2021-04-01",
+      "location": "Remote",
+      "summary": "Owned the ledger and settlement services behind a multi-currency payouts product.",
+      "highlights": [
+        "Cut settlement reconciliation time from hours to under five minutes by redesigning the batch pipeline.",
+        "Led the migration of 40+ services from a shared database to bounded per-service schemas with zero downtime.",
+        "Reduced p99 API latency by 38% through query profiling and targeted caching."
+      ]
+    },
+    {
+      "company": "Cedar Analytics",
+      "position": "Software Engineer",
+      "startDate": "2018-06-01",
+      "endDate": "2021-03-01",
+      "location": "Austin, TX",
+      "summary": "Built ingestion and reporting features for a customer-facing analytics dashboard.",
+      "highlights": [
+        "Designed an idempotent event-ingestion API handling 12k events per second at peak.",
+        "Introduced contract tests that cut integration regressions by roughly half."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Texas at Austin",
+      "studyType": "Bachelor of Science",
+      "area": "Computer Science",
+      "startDate": "2014-09-01",
+      "endDate": "2018-05-01",
+      "score": "3.8 GPA"
+    }
+  ],
+  "skills": [
+    { "name": "Languages", "keywords": ["TypeScript", "Go", "Python", "SQL"] },
+    { "name": "Infrastructure", "keywords": ["PostgreSQL", "Kafka", "Docker", "Kubernetes"] },
+    { "name": "Practices", "keywords": ["Observability", "CI/CD", "Contract testing"] }
+  ],
+  "projects": [
+    {
+      "name": "ledgerlint",
+      "description": "A static checker that flags unbalanced double-entry ledger transactions before they reach production.",
+      "url": "https://example.com/ledgerlint",
+      "highlights": [
+        "Catches a class of accounting bugs at commit time instead of in nightly reconciliation."
+      ]
+    }
+  ],
+  "links": [
+    { "label": "Website", "url": "https://example.com/jordan" },
+    { "label": "GitHub", "url": "https://example.com/gh/jordan" }
+  ]
+}

@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Test
+        run: npm test
+      - name: Smoke test (validate + render)
+        run: |
+          node dist/cli.js validate examples/resume.json
+          node dist/cli.js render examples/resume.json --format md -o /tmp/resume.md
+          node dist/cli.js render examples/resume.json --format html --theme compact -o /tmp/resume.html

@@ -1,0 +1,37 @@
+{
+  "name": "@cognis-digital/resumeforge",
+  "version": "1.0.0",
+  "description": "Structured resume builder: validate one JSON resume against an in-house schema and render clean Markdown or a self-contained, print-ready HTML page across multiple themes.",
+  "type": "module",
+  "bin": {
+    "resumeforge": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test \"dist/test/*.test.js\"",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "resume",
+    "cv",
+    "json-resume",
+    "markdown",
+    "html",
+    "cli",
+    "validator"
+  ],
+  "author": "Cognis Digital",
+  "license": "SEE LICENSE IN README.md",
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  }
+}
