@@ -7,6 +7,51 @@ PDF"). Multiple themes are supported, and the validator works as a CI gate.
 
 Zero runtime dependencies. Written in TypeScript, compiled to ESM, runs on Node 20+.
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+  "name": "John Doe",
+  "contact_info": {
+    "email": "johndoe@example.com",
+    "phone": "+1-555-1234567"
+  },
+  "summary": "Highly motivated and detail-oriented professional seeking a challenging role in data analysis.",
+  "work_experience": [
+    {
+      "title": "Data Analyst",
+      "company": "ABC Corporation",
+      "dates": ["2020-01-01", "2022-06-30"],
+      "description": "Analyzed sales trends and developed reports to inform business decisions."
+    },
+    {
+      "title": "Junior Data Scientist",
+      "company": "XYZ Inc.",
+      "dates": ["2018-09-01", "2019-12-31"],
+      "description": "Built predictive models using Python and R, and presented findings to stakeholders."
+    }
+  ],
+  "education": [
+    {
+      "name": "Master of Science in Data Science",
+      "institution": "University of Data Science",
+      "dates": ["2015-09-01", "2017-06-30"]
+    },
+    {
+      "name": "Bachelor of Science in Computer Science",
+      "institution": "University of Computing",
+      "dates": ["2010-09-01", "2014-06-30"]
+    }
+  ]
+}
+```
+
+<!-- cognis:example:end -->
+
 ## Install / build
 
 ```sh
